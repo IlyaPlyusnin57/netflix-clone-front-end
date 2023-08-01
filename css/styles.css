@@ -1,0 +1,504 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+/* main container styling */
+
+.bg-main {
+  position: relative;
+  background: url("../img/NetflixMovieLibrary.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  max-height: 100vh;
+  width: 100vw;
+}
+
+.bg-main::before {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  height: 100%;
+  width: 100%;
+}
+
+/* top banner styling */
+
+.top-banner img {
+  max-height: 50px;
+}
+
+.top-banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+#lang-select {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+select option {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.login-lang-banner::before {
+  content: "\f0ac";
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+}
+
+/* &#xf0ac; */
+
+/* main heading styling */
+
+.main-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* max-width: 950px;
+  width: 100%; */
+}
+
+.main-heading {
+  position: relative;
+  text-align: center;
+  max-width: 740px;
+  margin: 4rem 2rem 0;
+}
+
+.main-heading h1,
+.main-heading p {
+  margin-bottom: 1rem;
+}
+
+.main-heading h1 {
+  font-size: 4rem;
+}
+
+.main-heading p:nth-of-type(1) {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.main-heading p {
+  font-size: 1.5rem;
+}
+
+.center-p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0 6rem 1rem;
+}
+
+.container-for-input {
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  color: black;
+  padding-bottom: 15%;
+}
+
+.container-for-input button {
+  flex-basis: 30%;
+  font-size: 1.5em;
+}
+
+.email-input {
+  color: black;
+  padding: 0.9em;
+  font-size: 1.2em;
+  outline: none;
+  flex-basis: 70%;
+}
+
+.email-input:focus + label,
+.email-input:not(:placeholder-shown).email-input:not(:focus) + label {
+  top: 5px;
+  left: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: grey;
+}
+
+.container-label {
+  color: grey;
+  position: absolute;
+  top: 1.2em;
+  left: 1.2em;
+  transition: all 150ms ease-in;
+}
+
+/* TV Ad Styling */
+
+.tv-ad {
+  display: flex;
+  /* padding: 1rem 1.5rem; */
+  padding: 70px 45px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tv-ad > * {
+  flex-basis: 100%;
+}
+
+.text-ad h1 {
+  font-size: 16px;
+  font-size: 3.2em;
+}
+
+.text-ad p {
+  font-size: 1.5rem;
+}
+
+.image-ad {
+  position: relative;
+}
+
+.image-ad-2 {
+  margin: 0 0 0 -15%;
+}
+
+.image-ad img {
+  position: relative;
+  max-width: 100%;
+}
+
+.image-ad .video-showreel {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  max-width: 73%;
+  transform: translate(-50.5%, -48%);
+}
+
+.image-ad .video-st-season-2 {
+  position: absolute;
+  transform: translate(28%, 20%);
+  max-width: 63%;
+}
+
+.downloading-content {
+  display: flex;
+  position: absolute;
+  min-width: 15em;
+  width: 70%;
+  background-color: #000;
+  align-items: center;
+  left: 15%;
+  padding: 0.25em 0.65em;
+  border-radius: 0.75em;
+  bottom: 5%;
+  box-shadow: 0 0 2em 0 #000;
+  font-size: 16px;
+}
+
+.img-st-1 {
+  height: 4.5em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1rem 0 0;
+}
+
+.middle-dl-display {
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: left;
+}
+
+.middle-dl-display div:nth-child(1) {
+  font-weight: 600;
+}
+
+.gif {
+  /* padding: 1em; */
+  flex-grow: 0;
+  flex-shrink: 0;
+  /* background-size: 100%; */
+  height: 3em;
+  width: 3em;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 4rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.faq h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem 0 3rem;
+}
+
+.acc-wrapper {
+  margin-bottom: 4rem;
+}
+
+.accordion {
+  appearance: none;
+  width: 100%;
+  padding: 1rem;
+  background-color: #303030;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 1px;
+}
+
+.accordion::after {
+  content: "\002B";
+  float: right;
+}
+
+.active::after {
+  content: "\2212";
+}
+
+.panel {
+  background-color: #303030;
+  font-size: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 0.6rem;
+}
+
+.panel p {
+  padding: 1rem;
+}
+
+/* Footer */
+
+.footer-wrapper {
+  padding: 2rem;
+  font-size: 13px;
+}
+
+.footer-wrapper p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.footer-wrapper a {
+  line-height: 2.5;
+  width: max-content;
+}
+
+.footer-wrapper p,
+.footer-wrapper a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+/* Utility Classes */
+
+.gray-top-border {
+  border-top: 0.5rem solid #222;
+}
+
+.pad-right-3 {
+  padding-right: 3rem;
+}
+
+.blue {
+  color: #0071eb;
+}
+
+/* Buttons */
+
+.btn {
+  font-size: 16px;
+  appearance: none;
+  border: none;
+  padding: 0.3em 1em;
+  background-color: red;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-ml {
+  margin-left: 1rem;
+}
+
+.btn-large {
+  padding: 1rem;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 951px) {
+  .bg-main {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 0.9rem;
+  }
+
+  .main-heading p {
+    font-size: 1.5rem;
+  }
+
+  .container-for-input {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .container-for-input button {
+    width: max-content;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .tv-ad {
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .tv-ad > * {
+    flex: 100% 1 100%;
+  }
+
+  .text-ad h1 {
+    font-size: 2.5em;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+
+  .pad-right-3 {
+    padding-right: 0;
+  }
+
+  .image-ad-2 {
+    margin: 0;
+  }
+
+  .img-st-1 {
+    height: 4em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 0.7rem;
+  }
+
+  .main-heading p {
+    font-size: 2rem !important;
+  }
+
+  .img-st-1 {
+    height: 3em;
+  }
+
+  .faq {
+    padding: 0;
+  }
+
+  .accordion {
+    font-size: 2rem;
+  }
+
+  .container-for-input {
+    margin: 0 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .top-banner img {
+    max-height: 30px;
+  }
+
+  .tv-ad {
+    padding: 50px 5%;
+  }
+
+  .img-st-1 {
+    height: 3em;
+  }
+
+  .middle-dl-display div:nth-child(1) {
+    font-size: 0.9em;
+  }
+
+  .middle-dl-display div:nth-child(2) {
+    font-size: 0.75em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .top-banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .top-banner img {
+    max-height: 50px;
+    max-width: 100px;
+  }
+}
