@@ -99,7 +99,7 @@ select option {
 }
 
 .main-heading h1 {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
 }
 
 .main-heading p:nth-of-type(1) {
@@ -273,7 +273,7 @@ select option {
   background-color: #303030;
   cursor: pointer;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   border: none;
   margin-bottom: 1px;
 }
@@ -378,10 +378,6 @@ select option {
     font-size: 0.9rem;
   }
 
-  .main-heading p {
-    font-size: 1.5rem;
-  }
-
   .container-for-input {
     flex-direction: column;
     row-gap: 1.5rem;
@@ -441,20 +437,12 @@ select option {
     font-size: 0.7rem;
   }
 
-  .main-heading p {
-    font-size: 2rem !important;
-  }
-
   .img-st-1 {
     height: 3em;
   }
 
   .faq {
     padding: 0;
-  }
-
-  .accordion {
-    font-size: 2rem;
   }
 
   .container-for-input {
